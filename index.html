@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shreya Jangam — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+
+
+      <div>
+        <h1>Shreya Jangam</h1>
+        <p>Frontend Developer — UI & Motion Designing
+        </p>
+      </div>
+
+      <nav>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="hero">
+        <div class="card intro">
+          <h2 id="about">Hi — I'm Shreya</h2>
+          <p>I build clean, responsive user interfaces with HTML, CSS and JavaScript. I design motion-rich UI elements
+            using Adobe Animate and Figma, and I enjoy turning concepts into delightful interactions.</p>
+
+          <div class="badges">
+            <div class="badge">HTML</div>
+            <div class="badge">CSS</div>
+            <div class="badge">JavaScript</div>
+            <div class="badge">Figma</div>
+            <div class="badge">Animation</div>
+          </div>
+
+          <div class="intro-buttons">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn" href="/">Download CV</a>
+          </div>
+        </div>
+
+        <aside class="card profile">
+          <div class="avatar"> My  Details </div>
+
+          <div class="contact">
+            <p><strong>Email</strong><br>shreyajangam1934@gmail.com</p>
+            <p><strong>Phone</strong><br>+91 9356717193</p>
+            <p><strong>Location</strong><br>Kolhapur</p>
+          </div>
+
+          <p class="edu">B.Tech (2024–2028) — Kolhapur Institute of Technology</p>
+        </aside>
+      </section>
+
+      <section class="grid">
+
+        <div>
+          <div class="card projects" id="projects">
+            <div class="project-header">
+              <h3>Projects</h3>
+
+              <span class="filter-label">Filter:</span>
+            </div>
+
+            <div class="filters">
+              <div class="chip active" data-filter="all">All</div>
+              <div class="chip" data-filter="frontend">Frontend</div>
+              <div class="chip" data-filter="design">Design</div>
+              <div class="chip" data-filter="animation">Animation</div>
+            </div>
+
+            <div class="cards" id="project-cards">
+
+              <article class="project" data-type="frontend">
+                <h4>Interactive Landing Page</h4>
+                <p>Responsive landing page with animation and transitions.</p>
+                <div class="meta">
+                  <small>HTML • CSS • JS</small>
+                  <div>
+                    <button class="btn" onclick="openDemo('https://example.com')">Live</button>
+                    <button class="btn" onclick="openDemo('#')">Code</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project" data-type="design">
+                <h4>Figma UI </h4>
+                <p>Complete mobile & web UI kit with components and icons.</p>
+                <div class="meta">
+                  <small>Figma • UI</small>
+                  <div>
+                    <button class="btn" onclick="openDemo('#')">Preview</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project" data-type="animation">
+                <h4>Micro-interactions</h4>
+                <p>Motion interactions made with Adobe Animate.</p>
+                <div class="meta">
+                  <small>Animate • SVG</small>
+                  <div>
+                    <button class="btn" onclick="openDemo('#')">Preview</button>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="card extra">
+            <h3>Extra-curricular</h3>
+            <p>Participate in design & tech workshops, explore UI trends, practice coding challenges.</p>
+          </div>
+
+        </div>
+
+        <aside class="side">
+          <div class="card">
+            <h4>Skills</h4>
+            <div class="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JS</div>
+              <div class="skill">Figma</div>
+              <div class="skill">Animation</div>
+              <div class="skill">Illustrator</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4>Education</h4>
+            <p class="muted"><strong>B.Tech</strong> — Kolhapur Institute of Technology (2024–2028)</p>
+          </div>
+
+          <div class="card" id="contact">
+            <h4>Contact</h4>
+            <form id="contactForm">
+              <input id="name" type="text" placeholder="Your name">
+              <input id="email" type="email" placeholder="Your email">
+              <textarea id="message" rows="4" placeholder="Message"></textarea>
+              <button type="submit" class="btn">Send</button>
+              <div id="formMsg"></div>
+            </form>
+          </div>
+
+        </aside>
+      </section>
+
+      <footer>© <span id="year"></span> Shreya Jangam — Built with ❤️</footer>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
